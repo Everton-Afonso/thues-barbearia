@@ -1,0 +1,64 @@
+.dashboard-header {
+  background-color: #ffffff;
+  padding: 50px 28px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  max-width: 218px;
+  height: 100vh;
+
+  .logo {
+    text-align: center;
+
+    h1 {
+      color: #030229;
+      font-weight: 900;
+      font-size: 18px;
+      padding-bottom: 30px;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+
+      li {
+        a {
+          display: flex;
+          padding: 10px 0;
+          color: #03022980;
+          font-size: 16px;
+          text-decoration: none;
+          font-weight: 600;
+          transition: color 0.3s;
+          gap: 16px;
+
+          &.active,
+          &:hover {
+            color: #605bff;
+          }
+        }
+      }
+    }
+  }
+
+  .logout {
+    background: #605bff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    transition: all 0.2s ease;
+
+    &:hover {
+      filter: brightness(90%);
+    }
+  }
+}
